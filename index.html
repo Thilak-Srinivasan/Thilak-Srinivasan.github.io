@@ -2928,8 +2928,8 @@
             <span class="comment"># Link to GitHub: https://github.com/your-username/your-repo</span>
           </div>
           <div style="margin-top:12px;">
-            <a href="#" class="btn btn-outline" style="font-size:10px; padding:7px 16px;"
-              onclick="alert('Add your GitHub repo link here!')">🔗 Open GitHub Repository →</a>
+            <a id="modalGithubBtn" href="#" class="btn btn-outline" style="font-size:10px; padding:7px 16px;"
+              target="_blank">🔗 Open GitHub Repository →</a>
           </div>
         </div>
       </div>
@@ -2964,6 +2964,7 @@
       p1: {
         image: 'p1_threephase.png',
         title: 'Three-Phase Flow Simulation using VOF + AMR',
+        github: 'https://github.com/Thilak-Srinivasan/three-phase-flow-vof',
         code: `<span class="comment"># Three-phase flow simulation — ANSYS Fluent / Basilisk C</span>
 <span class="comment"># Replace with your actual code or link to GitHub</span>
 
@@ -2997,6 +2998,7 @@
       p2: {
         image: 'p2_solver.png',
         title: '2D Compressible Navier–Stokes Solver (Rusanov FVM)',
+        github: 'https://github.com/Thilak-Srinivasan/rarefied-gas-solver',
         code: `<span class="comment">// 2D Compressible N-S Solver — Rusanov Finite Volume Method</span>
 <span class="comment">// C++ implementation — extend with your actual solver code</span>
 
@@ -3031,6 +3033,7 @@
       p3: {
         image: 'p3_livestock.png',
         title: 'Livestock Shelter Thermal Design — PCM + Arid Climate',
+        github: 'https://github.com/Thilak-Srinivasan/livestock-shelter-lca-lcca',
         code: `<span class="comment"># Thermal resistance network analysis</span>
 <span class="comment"># Three-layer design: reflective → PCM → hygroscopic interior</span>
 
@@ -3064,6 +3067,7 @@ layers = {
       p4: {
         image: 'p4_ai.png',
         title: 'AI-Based Predictive Maintenance & Spare Parts Forecasting',
+        github: 'https://github.com/Thilak-Srinivasan/ai-defence-supply-chain',
         code: `<span class="comment"># Random Forest model for defence supply chain risk</span>
 <span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier
 <span class="keyword">import</span> pandas <span class="keyword">as</span> pd
@@ -3098,6 +3102,7 @@ model = RandomForestClassifier(
       p5: {
         image: 'p5_piston.png',
         title: 'Piston Assembly of a V6 Engine',
+        github: 'https://github.com/Thilak-Srinivasan/piston-assembly-v6',
         code: `<span class="comment">// Component → Machine → Key Operations</span>
 
 <span class="comment">// Piston Head → CNC Lathe + CNC Mill</span>
@@ -3281,6 +3286,14 @@ Q_charge   = <span class="string">12500</span>;  <span class="comment">% W — f
         mediaEl.innerHTML = `<img src="${p.image}" alt="${p.title}" style="width:100%;border-radius:8px;">`;
       } else {
         mediaEl.innerHTML = `<div class="modal-media-placeholder-text">📸 <span>Add project images, videos, or simulation outputs here</span><br><small style="color:var(--text3)">Upload directly from your GitHub repository or local files</small></div>`;
+      }
+      // Set GitHub button
+      const ghBtn = document.getElementById('modalGithubBtn');
+      if (p.github) {
+        ghBtn.href = p.github;
+        ghBtn.style.display = '';
+      } else {
+        ghBtn.style.display = 'none';
       }
       document.getElementById('modalOverlay').classList.add('open');
       document.body.style.overflow = 'hidden';
