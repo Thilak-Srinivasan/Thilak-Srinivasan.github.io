@@ -1641,7 +1641,7 @@
             <div class="role">Computational Researcher</div>
             <div class="org">BITS Pilani · Aspiring Performance Engineer 🏎️</div>
             <div class="hero-social" style="justify-content:center; margin-top: 12px;">
-              <a href="/cdn-cgi/l/email-protection#482e7a787a7a787f7f7908382124292621662a213c3b6538212429262166292b662126" title="Email" style="font-size:18px;">✉</a>
+              <a href="mailto:f20220771@pilani.bits-pilani.ac.in" title="Email" style="font-size:18px;">✉</a>
               <a href="https://www.linkedin.com/in/thilak-s-472002254" target="_blank" title="LinkedIn">in</a>
               <a href="https://github.com/Thilak-Srinivasan" target="_blank" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -2816,7 +2816,7 @@
             <div
               style="font-size:11px; color:var(--text3); margin-bottom:2px; font-family:var(--mono); text-transform:uppercase; letter-spacing:0.08em;">
               Email</div>
-            <a href="/cdn-cgi/l/email-protection#85e3b7b5b7b7b5b2b2b4c5f5ece9e4ebecabe7ecf1f6a8f5ece9e4ebecabe4e6abeceb">f20220771 [at] pilani [dot] bits-pilani [dot] ac [dot]
+            <a href="mailto:f20220771@pilani.bits-pilani.ac.in">f20220771 [at] pilani [dot] bits-pilani [dot] ac [dot]
               in</a>
           </div>
         </div>
@@ -2943,7 +2943,7 @@
   </div>
 
   <!-- ─── JAVASCRIPT ─── -->
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     // ─── NAV ───
     function toggleNav() {
       document.getElementById('navLinks').classList.toggle('open');
@@ -3149,7 +3149,6 @@ model = RandomForestClassifier(
       p6: {
         image: 'p6_capsule.png',
         title: 'AI-Assisted Capsule Endoscopy — Multiphysics FSI Simulation',
-        github: 'https://github.com/Thilak-Srinivasan/capsule-endoscopy-multiphysics',
         code: `<span class="comment">% COMSOL Multiphysics — Coupled EM + CFD + Structural</span>
 <span class="comment">% Physics modules: Magnetic Fields (mf) + Laminar Flow (spf) + Solid Mechanics (solid)</span>
 
@@ -3374,4 +3373,11 @@ Q_charge   = <span class="string">12500</span>;  <span class="comment">% W — f
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
     }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-    document
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // ─── KEYBOARD ───
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  </script>
+</body>
+
+</html>
