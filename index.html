@@ -619,6 +619,16 @@
       margin: 2px 0;
     }
 
+    .tl-org a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(249, 115, 22, 0.35);
+    }
+
+    .tl-org a:hover {
+      border-bottom-color: var(--orange);
+    }
+
     .tl-period {
       font-family: var(--mono);
       font-size: 10.5px;
@@ -658,10 +668,12 @@
       font-size: 12.5px;
       color: var(--text3);
       margin-bottom: 10px;
+      line-height: 1.6;
     }
 
     .tl-body .supervisor span {
       color: var(--blue);
+      font-weight: 600;
     }
 
     .tl-body .supervisor a {
@@ -671,6 +683,68 @@
 
     .tl-body .supervisor a:hover {
       text-decoration: underline;
+    }
+
+    /* Professional experience: larger company/institute logos on the left side */
+    #experience .timeline-item {
+      grid-template-columns: 120px 1fr;
+      gap: 28px;
+    }
+
+    #experience .timeline::before {
+      margin-left: 112px;
+    }
+
+    #experience .timeline-dot {
+      margin-left: 108px;
+    }
+
+    #experience .timeline-card {
+      position: relative;
+    }
+
+    #experience .tl-head {
+      position: relative;
+      margin-bottom: 14px;
+    }
+
+    #experience .tl-icon {
+      position: absolute;
+      left: -146px;
+      top: 2px;
+      width: 68px;
+      height: 68px;
+      border-radius: 10px;
+      border: 1px solid var(--border2);
+      background: #0f1624;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+    }
+
+    #experience .tl-meta {
+      padding-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      #experience .timeline-item {
+        grid-template-columns: 42px 1fr;
+        gap: 20px;
+      }
+
+      #experience .timeline::before {
+        margin-left: 20px;
+      }
+
+      #experience .timeline-dot {
+        margin-left: 16px;
+      }
+
+      #experience .tl-icon {
+        position: static;
+        width: 42px;
+        height: 42px;
+        border-radius: 8px;
+        box-shadow: none;
+      }
     }
 
     .tl-tags {
@@ -1762,7 +1836,8 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">Numerical Simulation of Rarefied Gases</div>
-              <div class="tl-org">BITS Pilani · Prof. Anirudh Singh Rana</div>
+                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
+                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
               <div class="tl-period">
                 <span>Dec 2025</span><span class="sep">·</span><span>Present</span>
                 <span class="sep">·</span><span>Ongoing</span>
@@ -1770,7 +1845,10 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a href="https://scholar.google.com/citations?user=D0lh2R4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Anirudh Singh Rana</a></span></div>
+            <div class="supervisor">Supervisor: <span><a
+                  href="https://scholar.google.com/citations?user=D0lh2R4AAAAJ&amp;hl=en" target="_blank"
+                  rel="noopener noreferrer"
+              title="Associate Professor, Department of Mathematics, BITS Pilani">Prof. Anirudh Singh Rana</a></span>, Associate Professor</div>
             <ul>
               <li>Developing and validating numerical solvers for Navier–Stokes regimes starting from an existing Euler
                 solver; implementing viscous terms, boundary conditions, and solver stabilization.</li>
@@ -1798,7 +1876,8 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">Thermal Analysis of Novel Roofing &amp; Insulation for Livestock Shelters</div>
-              <div class="tl-org">BITS Pilani · Prof. Srinivasan P &amp; S Rahul Bharath</div>
+                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
+                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
               <div class="tl-period">
                 <span>Aug 2025</span><span class="sep">·</span><span>Dec 2025</span>
                 <span class="sep">·</span><span>Arid Climate Design</span>
@@ -1806,7 +1885,13 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a href="https://scholar.google.com/citations?user=E2424AkAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Srinivasan P</a> &amp; <a href="https://www.linkedin.com/in/s-rahul-bharath-a1316797/" target="_blank" rel="noopener noreferrer">S Rahul Bharath</a></span></div>
+            <div class="supervisor">Supervisors: <span><a
+                href="https://scholar.google.com/citations?user=E2424AkAAAAJ&amp;hl=en" target="_blank"
+                rel="noopener noreferrer"
+                title="Professor, Department of Mechanical Engineering, BITS Pilani">Prof. P. Srinivasan</a></span>, Professor; <span><a href="https://www.linkedin.com/in/s-rahul-bharath-a1316797/" target="_blank"
+                rel="noopener noreferrer"
+                title="Research Scholar, Department of Mechanical Engineering, BITS Pilani">S Rahul Bharath</a></span>,
+              Research Scholar</div>
             <ul>
               <li>Conducted thermal simulations of roofing materials (Tin, Zinc, Aluminum) and insulation (EPS,
                 Polyurethane, PCM) using Rajasthan arid-zone weather data; identified <strong>12–18% energy savings
@@ -1838,7 +1923,8 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">Modelling &amp; Simulation of AI-Assisted Smart Capsule Endoscopy</div>
-              <div class="tl-org">BITS Pilani · Prof. Jitendra Singh Rathore</div>
+                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
+                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
               <div class="tl-period">
                 <span>Aug 2025</span><span class="sep">·</span><span>Dec 2025</span>
                 <span class="sep">·</span><span>Biomedical Multiphysics</span>
@@ -1846,7 +1932,10 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a href="https://scholar.google.com/citations?user=TLn3-BkAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Jitendra Singh Rathore</a></span></div>
+            <div class="supervisor">Supervisor: <span><a
+                  href="https://scholar.google.com/citations?user=TLn3-BkAAAAJ&amp;hl=en" target="_blank"
+                  rel="noopener noreferrer"
+              title="Associate Professor, Department of Mechanical Engineering, BITS Pilani">Prof. Jitendra S Rathore</a></span>, Associate Professor</div>
             <ul>
               <li>Developed multiphysics simulation (Magnetic Fields, Laminar Flow, FSI) for electromagnetically
                 navigated wireless capsule endoscope; validated <strong>78.4 mN propulsion force</strong> and tissue
@@ -1876,7 +1965,8 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">AI-Based Preventive Maintenance &amp; Demand Forecast of Spares</div>
-              <div class="tl-org">BITS Pilani · Prof. Phaneendra Kiran Chaganti</div>
+                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/hyderabad/mechanical-engineering/"
+                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
               <div class="tl-period">
                 <span>May 2025</span><span class="sep">·</span><span>Jul 2025</span>
                 <span class="sep">·</span><span>Defence Supply Chain</span>
@@ -1884,7 +1974,11 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a href="https://scholar.google.com/citations?user=duujNk4AAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Phaneendra Kiran Chaganti</a></span></div>
+            <div class="supervisor">Supervisor: <span><a
+              href="https://scholar.google.com/citations?user=duujNk4AAAAJ&amp;hl=en" target="_blank"
+              rel="noopener noreferrer"
+              title="Associate Professor, Department of Mechanical Engineering, BITS Pilani, Hyderabad Campus">Prof.
+              Phaneendra Kiran Chaganti</a></span>, Associate Professor</div>
             <ul>
               <li>Mapped Tier 1–3 defence supply chains (S-400, Rafale, Apache, Barak, K9) using OSINT; identified
                 single-source vulnerabilities and geopolitical risk (Last Conflict Year 56.1, Militarized Disputes
@@ -1916,7 +2010,8 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">Numerical Simulation of Three-Phase Flow</div>
-              <div class="tl-org">BITS Pilani · Prof. Shyam Sunder Yadav</div>
+                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
+                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
               <div class="tl-period">
                 <span>Jan 2025</span><span class="sep">·</span><span>May 2025</span>
                 <span class="sep">·</span><span>Multiphase CFD</span>
@@ -1924,7 +2019,10 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a href="https://scholar.google.co.in/citations?user=-0t1wUgAAAAJ" target="_blank" rel="noopener noreferrer">Prof. Shyam Sunder Yadav</a></span></div>
+            <div class="supervisor">Supervisor: <span><a href="https://scholar.google.co.in/citations?user=-0t1wUgAAAAJ"
+              target="_blank" rel="noopener noreferrer"
+              title="Associate Professor, Department of Mechanical Engineering, BITS Pilani">Prof. Shyam Sunder
+              Yadav</a></span>, Associate Professor</div>
             <ul>
               <li>Developed high-resolution CFD simulations using VOF with Adaptive Mesh Refinement (AMR) to model gas
                 plume rise and bubble dynamics.</li>
@@ -1963,7 +2061,8 @@
                 style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div>
             <div class="tl-meta">
               <div class="tl-role">Robotics Simulation Intern — Biped Robot Development</div>
-              <div class="tl-org">GUNI–WSRIP, Ganpat University</div>
+                <div class="tl-org">GUNI–WSRIP, <a href="https://www.ganpatuniversity.ac.in/programmes/after-12th-programs-undergraduate-programs/engineering-technology/bachelor-of-technology-in-mechatronics-engineering"
+                  target="_blank" rel="noopener noreferrer">Ganpat University, Mechatronics Department</a></div>
               <div class="tl-period">
                 <span>Jan 2026</span><span class="sep">·</span><span>Present</span>
                 <span class="sep">·</span><span>Gandhinagar, India</span>
@@ -1971,7 +2070,9 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span>Prof. J. K. Prajapati</span></div>
+            <div class="supervisor">Supervisor: <span><a
+              href="https://uvpce.guni.ac.in/people/faculty/jitendra-kashiram-prajapati" target="_blank"
+              rel="noopener noreferrer">Prof. J. K. Prajapati</a></span>, Assistant Professor</div>
             <ul>
               <li>Developed a physics-based bipedal simulation in PyBullet with automated URDF generation, achieving
                 stable walking, 45° push recovery (0.65s), and ZMP confinement within 70% foot area via CPG oscillators
@@ -2009,7 +2110,8 @@
                 style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div>
             <div class="tl-meta">
               <div class="tl-role">Research Intern</div>
-              <div class="tl-org">Lurnable.com</div>
+                  <div class="tl-org"><a href="https://www.lurnable.com" target="_blank"
+                    rel="noopener noreferrer">Lurnable Ltd</a></div>
               <div class="tl-period">
                 <span>Aug 2025</span><span class="sep">·</span><span>Sep 2025</span>
                 <span class="sep">·</span><span>Remote, UK</span>
@@ -2017,6 +2119,8 @@
             </div>
           </div>
           <div class="tl-body">
+            <div class="supervisor">Supervisor: <span><a href="https://www.nithyaprabu.com" target="_blank"
+              rel="noopener noreferrer">Nithya Prabu</a></span>, Founder / Director</div>
             <ul>
               <li>Analyzed student personas and user journeys by gathering qualitative feedback through peer interviews
                 and surveys, identifying UX friction points and opportunities for more empathetic interactions.</li>
@@ -2041,7 +2145,8 @@
                 style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div>
             <div class="tl-meta">
               <div class="tl-role">Investment Banking Analyst</div>
-              <div class="tl-org">Finlatics</div>
+                <div class="tl-org"><a href="https://www.finlatics.com" target="_blank"
+                  rel="noopener noreferrer">Finlatics</a></div>
               <div class="tl-period">
                 <span>Jul 2025</span><span class="sep">·</span><span>Sep 2025</span>
                 <span class="sep">·</span><span>Remote</span>
@@ -2073,7 +2178,8 @@
                 style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div>
             <div class="tl-meta">
               <div class="tl-role">Summer Intern — Dynamic Analysis of Tube Locator Module (TLM)</div>
-              <div class="tl-org">IGCAR, Kalpakkam (Nuclear Research)</div>
+                <div class="tl-org"><a href="https://www.igcar.gov.in" target="_blank"
+                  rel="noopener noreferrer">IGCAR, Kalpakkam (Nuclear Research)</a></div>
               <div class="tl-period">
                 <span>May 2024</span><span class="sep">·</span><span>Jul 2024</span>
                 <span class="sep">·</span><span>Kalpakkam, India</span>
@@ -2081,8 +2187,8 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span>Dr. S. Joseph Winston</span> · Certificate of Appreciation Awarded
-            </div>
+            <div class="supervisor">Supervisor: <span><a href="https://www.researchgate.net/profile/S-Winston"
+              target="_blank" rel="noopener noreferrer">Dr. S. Joseph Winston</a></span>, Head RHIED, FRTG</div>
             <ul>
               <li>Performed comprehensive kinematic and dynamic analysis of the Tube Locator Module (TLM), a robotic
                 manipulator used in automated inspection systems, using forward and inverse kinematics via
