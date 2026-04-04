@@ -2990,20 +2990,20 @@
         <div class="form-row">
           <div class="form-field">
             <label>Your Name</label>
-            <input type="text" placeholder="Iris Thorne" required>
+            <input type="text" name="name" placeholder="Iris Thorne" required>
           </div>
           <div class="form-field">
             <label>Email</label>
-            <input type="email" placeholder="iris.thorne@visualcanvas.io" required>
+            <input type="email" name="email" placeholder="iris.thorne@visualcanvas.io" required>
           </div>
         </div>
         <div class="form-field">
           <label>Subject</label>
-          <input type="text" placeholder="Research collaboration / Internship opportunity...">
+          <input type="text" name="subject" placeholder="Research collaboration / Internship opportunity..." required>
         </div>
         <div class="form-field">
           <label>Message</label>
-          <textarea placeholder="Your message here..." rows="5"></textarea>
+          <textarea name="message" placeholder="Your message here..." rows="5" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message →</button>
       </form>
@@ -3474,13 +3474,46 @@ Q_charge   = <span class="string">12500</span>;  <span class="comment">% W — f
     }
 
     // ─── CONTACT FORM ───
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('button[type=submit]');
-      btn.textContent = '✓ Message Sent!';
-      btn.style.background = '#22c55e';
-      setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; }, 3000);
-    }
+   async function handleSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn  = form.querySelector('button[type=submit]');
+  const name    = (form.querySelector('[name=name]')?.value    || '').trim();
+  const email   = (form.querySelector('[name=email]')?.value   || '').trim();
+  const subject = (form.querySelector('[name=subject]')?.value || '').trim();
+  const message = (form.querySelector('[name=message]')?.value || '').trim();
+
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+
+  try {
+    const res = await fetch('https://formsubmit.co/ajax/f20220771@pilani.bits-pilani.ac.in', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        name, email, subject, message,
+        _subject: `Portfolio Contact: ${subject}`,
+        _template: 'table',
+        _captcha: 'false'
+      })
+    });
+    if (!res.ok) throw new Error('failed');
+    btn.textContent = '✓ Message Sent!';
+    btn.style.background = '#22c55e';
+    form.reset();
+    setTimeout(() => {
+      btn.textContent = 'Send Message →';
+      btn.style.background = '';
+      btn.disabled = false;
+    }, 3000);
+  } catch (err) {
+    btn.textContent = 'Send Message →';
+    btn.disabled = false;
+    const s = encodeURIComponent(subject || 'Portfolio contact');
+    const b = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    window.location.href = `mailto:f20220771@pilani.bits-pilani.ac.in?subject=${s}&body=${b}`;
+  }
+}
 
     // ─── FADE IN ON SCROLL ───
     const observer = new IntersectionObserver((entries) => {
