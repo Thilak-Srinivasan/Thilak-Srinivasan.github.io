@@ -619,16 +619,6 @@
       margin: 2px 0;
     }
 
-    .tl-org a {
-      color: inherit;
-      text-decoration: none;
-      border-bottom: 1px dotted rgba(249, 115, 22, 0.35);
-    }
-
-    .tl-org a:hover {
-      border-bottom-color: var(--orange);
-    }
-
     .tl-period {
       font-family: var(--mono);
       font-size: 10.5px;
@@ -668,83 +658,10 @@
       font-size: 12.5px;
       color: var(--text3);
       margin-bottom: 10px;
-      line-height: 1.6;
     }
 
     .tl-body .supervisor span {
       color: var(--blue);
-      font-weight: 600;
-    }
-
-    .tl-body .supervisor a {
-      color: var(--blue);
-      text-decoration: none;
-    }
-
-    .tl-body .supervisor a:hover {
-      text-decoration: underline;
-    }
-
-    /* Professional experience: larger company/institute logos on the left side */
-    #experience .timeline-item {
-      grid-template-columns: 120px 1fr;
-      gap: 28px;
-    }
-
-    #experience .timeline::before {
-      margin-left: 112px;
-    }
-
-    #experience .timeline-dot {
-      margin-left: 108px;
-    }
-
-    #experience .timeline-card {
-      position: relative;
-    }
-
-    #experience .tl-head {
-      position: relative;
-      margin-bottom: 14px;
-    }
-
-    #experience .tl-icon {
-      position: absolute;
-      left: -146px;
-      top: 2px;
-      width: 68px;
-      height: 68px;
-      border-radius: 10px;
-      border: 1px solid var(--border2);
-      background: #0f1624;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
-    }
-
-    #experience .tl-meta {
-      padding-left: 0;
-    }
-
-    @media (max-width: 768px) {
-      #experience .timeline-item {
-        grid-template-columns: 42px 1fr;
-        gap: 20px;
-      }
-
-      #experience .timeline::before {
-        margin-left: 20px;
-      }
-
-      #experience .timeline-dot {
-        margin-left: 16px;
-      }
-
-      #experience .tl-icon {
-        position: static;
-        width: 42px;
-        height: 42px;
-        border-radius: 8px;
-        box-shadow: none;
-      }
     }
 
     .tl-tags {
@@ -1713,7 +1630,7 @@
           <div>
             <div class="hero-photo-ring">
               <div class="hero-photo-inner" id="photoContainer">
-                <img src="assets/images/linkedin.jpeg" alt="Thilak S">
+                <img src="linkedin.jpeg" alt="Thilak S">
               </div>
             </div>
             <div style="text-align:center; margin-top: 10px;">
@@ -1724,7 +1641,7 @@
             <div class="role">Computational Researcher</div>
             <div class="org">BITS Pilani · Aspiring Performance Engineer 🏎️</div>
             <div class="hero-social" style="justify-content:center; margin-top: 12px;">
-              <a href="mailto:f20220771@pilani.bits-pilani.ac.in" title="Email" style="font-size:18px;">✉</a>
+              <a href="/cdn-cgi/l/email-protection#c3a5f1f3f1f1f3f4f4f283b3aaafa2adaaeda1aab7b0eeb3aaafa2adaaeda2a0edaaad" title="Email" style="font-size:18px;">✉</a>
               <a href="https://www.linkedin.com/in/thilak-s-472002254" target="_blank" title="LinkedIn">in</a>
               <a href="https://github.com/Thilak-Srinivasan" target="_blank" title="GitHub">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -1739,7 +1656,7 @@
                 </svg></a>
             </div>
             <div style="text-align:center; margin-top:14px;">
-              <a href="https://drive.google.com/file/d/144KCkDnaQ04IAkciVLxA3ioxAn5ZtnIp/view?usp=share_link"
+              <a href="https://drive.google.com/file/d/1WbP8gEiuoRpbOsyrsegEKYDWWqZNrsid/view?usp=share_link"
                 target="_blank" class="btn btn-outline" style="font-size:10px; padding: 7px 18px;"><svg width="11"
                   height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                   stroke-linecap="round" stroke-linejoin="round">
@@ -1836,8 +1753,7 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">Numerical Simulation of Rarefied Gases</div>
-                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
-                  target="_blank" rel="noopener noreferrer">Department of Mathematics</a></div>
+              <div class="tl-org">BITS Pilani · Prof. Anirudh Singh Rana</div>
               <div class="tl-period">
                 <span>Dec 2025</span><span class="sep">·</span><span>Present</span>
                 <span class="sep">·</span><span>Ongoing</span>
@@ -1845,10 +1761,7 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a
-                  href="https://scholar.google.com/citations?user=D0lh2R4AAAAJ&amp;hl=en" target="_blank"
-                  rel="noopener noreferrer"
-              title="Associate Professor, Department of Mathematics, BITS Pilani">Prof. Anirudh Singh Rana</a></span>, Associate Professor</div>
+            <div class="supervisor">Supervisor: <span>Prof. Anirudh Singh Rana</span></div>
             <ul>
               <li>Developing and validating numerical solvers for Navier–Stokes regimes starting from an existing Euler
                 solver; implementing viscous terms, boundary conditions, and solver stabilization.</li>
@@ -1876,8 +1789,7 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">Thermal Analysis of Novel Roofing &amp; Insulation for Livestock Shelters</div>
-                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
-                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
+              <div class="tl-org">BITS Pilani · Prof. Srinivasan P &amp; S Rahul Bharath</div>
               <div class="tl-period">
                 <span>Aug 2025</span><span class="sep">·</span><span>Dec 2025</span>
                 <span class="sep">·</span><span>Arid Climate Design</span>
@@ -1885,13 +1797,7 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisors: <span><a
-                href="https://scholar.google.com/citations?user=E2424AkAAAAJ&amp;hl=en" target="_blank"
-                rel="noopener noreferrer"
-                title="Professor, Department of Mechanical Engineering, BITS Pilani">Prof. P. Srinivasan</a></span>, Professor; <span><a href="https://www.linkedin.com/in/s-rahul-bharath-a1316797/" target="_blank"
-                rel="noopener noreferrer"
-                title="Research Scholar, Department of Mechanical Engineering, BITS Pilani">S Rahul Bharath</a></span>,
-              Research Scholar</div>
+            <div class="supervisor">Supervisor: <span>Prof. Srinivasan P &amp; S Rahul Bharath</span></div>
             <ul>
               <li>Conducted thermal simulations of roofing materials (Tin, Zinc, Aluminum) and insulation (EPS,
                 Polyurethane, PCM) using Rajasthan arid-zone weather data; identified <strong>12–18% energy savings
@@ -1923,8 +1829,7 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">Modelling &amp; Simulation of AI-Assisted Smart Capsule Endoscopy</div>
-                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
-                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
+              <div class="tl-org">BITS Pilani · Prof. Jitendra Singh Rathore</div>
               <div class="tl-period">
                 <span>Aug 2025</span><span class="sep">·</span><span>Dec 2025</span>
                 <span class="sep">·</span><span>Biomedical Multiphysics</span>
@@ -1932,10 +1837,7 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a
-                  href="https://scholar.google.com/citations?user=TLn3-BkAAAAJ&amp;hl=en" target="_blank"
-                  rel="noopener noreferrer"
-              title="Associate Professor, Department of Mechanical Engineering, BITS Pilani">Prof. Jitendra S Rathore</a></span>, Associate Professor</div>
+            <div class="supervisor">Supervisor: <span>Prof. Jitendra Singh Rathore</span></div>
             <ul>
               <li>Developed multiphysics simulation (Magnetic Fields, Laminar Flow, FSI) for electromagnetically
                 navigated wireless capsule endoscope; validated <strong>78.4 mN propulsion force</strong> and tissue
@@ -1965,8 +1867,7 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">AI-Based Preventive Maintenance &amp; Demand Forecast of Spares</div>
-                <div class="tl-org">BITS Hyderabad · <a href="https://www.bits-pilani.ac.in/hyderabad/mechanical-engineering/"
-                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
+              <div class="tl-org">BITS Pilani · Prof. Phaneendra Kiran Chaganti</div>
               <div class="tl-period">
                 <span>May 2025</span><span class="sep">·</span><span>Jul 2025</span>
                 <span class="sep">·</span><span>Defence Supply Chain</span>
@@ -1974,11 +1875,7 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a
-              href="https://scholar.google.com/citations?user=duujNk4AAAAJ&amp;hl=en" target="_blank"
-              rel="noopener noreferrer"
-              title="Associate Professor, Department of Mechanical Engineering, BITS Pilani, Hyderabad Campus">Prof.
-              Phaneendra Kiran Chaganti</a></span>, Associate Professor</div>
+            <div class="supervisor">Supervisor: <span>Prof. Phaneendra Kiran Chaganti</span></div>
             <ul>
               <li>Mapped Tier 1–3 defence supply chains (S-400, Rafale, Apache, Barak, K9) using OSINT; identified
                 single-source vulnerabilities and geopolitical risk (Last Conflict Year 56.1, Militarized Disputes
@@ -2010,8 +1907,7 @@
               </svg></div>
             <div class="tl-meta">
               <div class="tl-role">Numerical Simulation of Three-Phase Flow</div>
-                <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
-                  target="_blank" rel="noopener noreferrer">Department of Mechanical Engineering</a></div>
+              <div class="tl-org">BITS Pilani · Prof. Shyam Sunder Yadav</div>
               <div class="tl-period">
                 <span>Jan 2025</span><span class="sep">·</span><span>May 2025</span>
                 <span class="sep">·</span><span>Multiphase CFD</span>
@@ -2019,10 +1915,7 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a href="https://scholar.google.co.in/citations?user=-0t1wUgAAAAJ"
-              target="_blank" rel="noopener noreferrer"
-              title="Associate Professor, Department of Mechanical Engineering, BITS Pilani">Prof. Shyam Sunder
-              Yadav</a></span>, Associate Professor</div>
+            <div class="supervisor">Supervisor: <span>Prof. Shyam Sunder Yadav</span></div>
             <ul>
               <li>Developed high-resolution CFD simulations using VOF with Adaptive Mesh Refinement (AMR) to model gas
                 plume rise and bubble dynamics.</li>
@@ -2057,12 +1950,11 @@
         <div class="timeline-dot"></div>
         <div class="timeline-card">
           <div class="tl-head">
-            <div class="tl-icon" style="overflow:hidden;padding:2px;"><img src="assets/images/logo_ganpat.png" alt="Ganpat University"
+            <div class="tl-icon" style="overflow:hidden;padding:2px;"><img src="logo_ganpat.png" alt="Ganpat University"
                 style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div>
             <div class="tl-meta">
               <div class="tl-role">Robotics Simulation Intern — Biped Robot Development</div>
-                <div class="tl-org">GUNI–WSRIP, <a href="https://www.ganpatuniversity.ac.in/programmes/after-12th-programs-undergraduate-programs/engineering-technology/bachelor-of-technology-in-mechatronics-engineering"
-                  target="_blank" rel="noopener noreferrer">Ganpat University, Mechatronics Department</a></div>
+              <div class="tl-org">GUNI–WSRIP, Ganpat University</div>
               <div class="tl-period">
                 <span>Jan 2026</span><span class="sep">·</span><span>Present</span>
                 <span class="sep">·</span><span>Gandhinagar, India</span>
@@ -2070,9 +1962,7 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a
-              href="https://uvpce.guni.ac.in/people/faculty/jitendra-kashiram-prajapati" target="_blank"
-              rel="noopener noreferrer">Prof. J. K. Prajapati</a></span>, Assistant Professor</div>
+            <div class="supervisor">Supervisor: <span>Prof. J. K. Prajapati</span></div>
             <ul>
               <li>Developed a physics-based bipedal simulation in PyBullet with automated URDF generation, achieving
                 stable walking, 45° push recovery (0.65s), and ZMP confinement within 70% foot area via CPG oscillators
@@ -2106,12 +1996,11 @@
         <div class="timeline-dot"></div>
         <div class="timeline-card">
           <div class="tl-head">
-            <div class="tl-icon" style="overflow:hidden;padding:2px;"><img src="assets/images/logo_lurnable.png" alt="Lurnable"
+            <div class="tl-icon" style="overflow:hidden;padding:2px;"><img src="logo_lurnable.png" alt="Lurnable"
                 style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div>
             <div class="tl-meta">
               <div class="tl-role">Research Intern</div>
-                  <div class="tl-org"><a href="https://www.lurnable.com" target="_blank"
-                    rel="noopener noreferrer">Lurnable Ltd</a></div>
+              <div class="tl-org">Lurnable.com</div>
               <div class="tl-period">
                 <span>Aug 2025</span><span class="sep">·</span><span>Sep 2025</span>
                 <span class="sep">·</span><span>Remote, UK</span>
@@ -2119,8 +2008,6 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a href="https://www.nithyaprabu.com" target="_blank"
-              rel="noopener noreferrer">Nithya Prabu</a></span>, Founder / Director</div>
             <ul>
               <li>Analyzed student personas and user journeys by gathering qualitative feedback through peer interviews
                 and surveys, identifying UX friction points and opportunities for more empathetic interactions.</li>
@@ -2141,12 +2028,11 @@
         <div class="timeline-dot"></div>
         <div class="timeline-card">
           <div class="tl-head">
-            <div class="tl-icon" style="overflow:hidden;padding:2px;"><img src="assets/images/logo_finlatics.png" alt="Finlatics"
+            <div class="tl-icon" style="overflow:hidden;padding:2px;"><img src="logo_finlatics.png" alt="Finlatics"
                 style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div>
             <div class="tl-meta">
               <div class="tl-role">Investment Banking Analyst</div>
-                <div class="tl-org"><a href="https://www.finlatics.com" target="_blank"
-                  rel="noopener noreferrer">Finlatics</a></div>
+              <div class="tl-org">Finlatics</div>
               <div class="tl-period">
                 <span>Jul 2025</span><span class="sep">·</span><span>Sep 2025</span>
                 <span class="sep">·</span><span>Remote</span>
@@ -2174,12 +2060,11 @@
         <div class="timeline-dot"></div>
         <div class="timeline-card">
           <div class="tl-head">
-            <div class="tl-icon" style="overflow:hidden;padding:2px;"><img src="assets/images/logo_igcar.png" alt="IGCAR"
+            <div class="tl-icon" style="overflow:hidden;padding:2px;"><img src="logo_igcar.png" alt="IGCAR"
                 style="width:100%;height:100%;object-fit:contain;border-radius:6px;"></div>
             <div class="tl-meta">
               <div class="tl-role">Summer Intern — Dynamic Analysis of Tube Locator Module (TLM)</div>
-                <div class="tl-org"><a href="https://www.igcar.gov.in" target="_blank"
-                  rel="noopener noreferrer">IGCAR, Kalpakkam (Nuclear Research)</a></div>
+              <div class="tl-org">IGCAR, Kalpakkam (Nuclear Research)</div>
               <div class="tl-period">
                 <span>May 2024</span><span class="sep">·</span><span>Jul 2024</span>
                 <span class="sep">·</span><span>Kalpakkam, India</span>
@@ -2187,8 +2072,8 @@
             </div>
           </div>
           <div class="tl-body">
-            <div class="supervisor">Supervisor: <span><a href="https://www.researchgate.net/profile/S-Winston"
-              target="_blank" rel="noopener noreferrer">Dr. S. Joseph Winston</a></span>, Head RHIED, FRTG</div>
+            <div class="supervisor">Supervisor: <span>Dr. S. Joseph Winston</span> · Certificate of Appreciation Awarded
+            </div>
             <ul>
               <li>Performed comprehensive kinematic and dynamic analysis of the Tube Locator Module (TLM), a robotic
                 manipulator used in automated inspection systems, using forward and inverse kinematics via
@@ -2245,7 +2130,7 @@
       <!-- Project 1 -->
       <div class="proj-card fade-up" data-cat="cfd" onclick="openModal('p1')">
         <div class="proj-media">
-          <img src="assets/images/p1_threephase.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p1_threephase.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">CFD</span><span class="proj-cat">Multiphase</span></div>
@@ -2259,12 +2144,11 @@
                 <circle cx="12" cy="12" r="2" />
               </svg></span> <span>Tool:</span> <span class="val">ANSYS Fluent + Basilisk C</span></div>
           <div class="proj-links">
-            <a href="https://github.com/Thilak-Srinivasan/three-phase-flow-vof" class="proj-link github"
-              onclick="event.stopPropagation()" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24"
-                fill="currentColor">
+            <span class="proj-link github" onclick="event.stopPropagation()"><svg width="12" height="12"
+                viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-              </svg> GitHub</a>
+              </svg> GitHub</span>
             <a href="https://drive.google.com/file/d/1_wUjSBpUOoNHj1we_0eCFgjjvNyIYlg_/view?usp=share_link"
               class="proj-link" onclick="event.stopPropagation()" target="_blank"><svg width="11" height="11"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -2285,7 +2169,7 @@
       <!-- Project 2 -->
       <div class="proj-card fade-up" data-cat="cfd" onclick="openModal('p2')" style="transition-delay:0.05s">
         <div class="proj-media">
-          <img src="assets/images/p2_solver.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p2_solver.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">CFD</span><span class="proj-cat">Compressible Flow</span></div>
@@ -2300,12 +2184,11 @@
                 <circle cx="12" cy="12" r="2" />
               </svg></span> <span>Method:</span> <span class="val">Rusanov FVM · From Scratch</span></div>
           <div class="proj-links">
-            <a href="https://github.com/Thilak-Srinivasan/rarefied-gas-solver" class="proj-link github"
-              onclick="event.stopPropagation()" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24"
-                fill="currentColor">
+            <span class="proj-link github" onclick="event.stopPropagation()"><svg width="12" height="12"
+                viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-              </svg> GitHub</a>
+              </svg> GitHub</span>
             <span class="proj-link" onclick="openModal('p2'); event.stopPropagation()"><svg width="11" height="11"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -2319,7 +2202,7 @@
       <!-- Project 3 -->
       <div class="proj-card fade-up" data-cat="thermal" onclick="openModal('p3')" style="transition-delay:0.1s">
         <div class="proj-media">
-          <img src="assets/images/p3_livestock.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p3_livestock.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">Thermal</span><span class="proj-cat">Sustainability</span></div>
@@ -2332,12 +2215,11 @@
                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
               </svg></span> <span>Energy Savings:</span> <span class="val">12–18% identified</span></div>
           <div class="proj-links">
-            <a href="https://github.com/Thilak-Srinivasan/livestock-shelter-lca-lcca" class="proj-link github"
-              onclick="event.stopPropagation()" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24"
-                fill="currentColor">
+            <span class="proj-link github" onclick="event.stopPropagation()"><svg width="12" height="12"
+                viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-              </svg> GitHub</a>
+              </svg> GitHub</span>
             <a href="https://drive.google.com/file/d/10WwBMT8hFxlqQCel3R3-1LdKKCngETOs/view?usp=share_link"
               class="proj-link" onclick="event.stopPropagation()" target="_blank"><svg width="11" height="11"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -2358,7 +2240,7 @@
       <!-- Project 4 -->
       <div class="proj-card fade-up" data-cat="ai" onclick="openModal('p4')">
         <div class="proj-media">
-          <img src="assets/images/p4_ai.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p4_ai.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">AI / ML</span><span class="proj-cat">Supply Chain</span></div>
@@ -2373,9 +2255,8 @@
                 <circle cx="12" cy="12" r="2" />
               </svg></span> <span>Model:</span> <span class="val">RF · 30 trees · Depth 6</span></div>
           <div class="proj-links">
-            <a href="https://github.com/Thilak-Srinivasan/ai-defence-supply-chain" class="proj-link github"
-              onclick="event.stopPropagation()" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24"
-                fill="currentColor">
+            <a href="https://github.com/Thilak-Srinivasan/ai-defence-supply-chain" class="proj-link github" onclick="event.stopPropagation()" target="_blank"><svg width="12" height="12"
+                viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
               </svg> GitHub</a>
@@ -2400,7 +2281,7 @@
       <!-- Project 5 -->
       <div class="proj-card fade-up" data-cat="mfg" onclick="openModal('p5')" style="transition-delay:0.05s">
         <div class="proj-media">
-          <img src="assets/images/p5_piston.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p5_piston.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">Manufacturing</span><span class="proj-cat">CAD</span></div>
@@ -2414,12 +2295,6 @@
                   d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
               </svg></span> <span>Machines:</span> <span class="val">CNC Lathe · Manual Mill · Manual Lathe</span></div>
           <div class="proj-links">
-            <a href="https://github.com/Thilak-Srinivasan/piston-assembly-v6" class="proj-link github"
-              onclick="event.stopPropagation()" target="_blank"><svg width="12" height="12" viewBox="0 0 24 24"
-                fill="currentColor">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-              </svg> GitHub</a>
             <span class="proj-link" onclick="openModal('p5'); event.stopPropagation()"><svg width="11" height="11"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -2433,7 +2308,7 @@
       <!-- Project 6 -->
       <div class="proj-card fade-up" data-cat="cfd" onclick="openModal('p6')" style="transition-delay:0.1s">
         <div class="proj-media">
-          <img src="assets/images/p6_capsule.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p6_capsule.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">Biomedical</span><span class="proj-cat">Multiphysics</span>
@@ -2447,12 +2322,11 @@
                 <polyline points="20 6 9 17 4 12" />
               </svg></span> <span>Sensitivity:</span> <span class="val">96.2% diagnostic AI</span></div>
           <div class="proj-links">
-            <a href="https://github.com/Thilak-Srinivasan/capsule-endoscopy" class="proj-link github"
-              onclick="event.stopPropagation()" target="_blank"><svg width="12" height="12"
+            <span class="proj-link github" onclick="event.stopPropagation()"><svg width="12" height="12"
                 viewBox="0 0 24 24" fill="currentColor">
                 <path
                   d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.72-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.82.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
-              </svg> GitHub</a>
+              </svg> GitHub</span>
             <a href="https://drive.google.com/file/d/1CGlDWO5dj9MQmJVf3oCfF4uJglBwfSU2/view?usp=share_link"
               class="proj-link" onclick="event.stopPropagation()" target="_blank"><svg width="11" height="11"
                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -2473,7 +2347,7 @@
       <!-- Project 7 -->
       <div class="proj-card fade-up" data-cat="finance" onclick="openModal('p7')">
         <div class="proj-media">
-          <img src="assets/images/p7_tcs.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p7_tcs.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">Finance</span><span class="proj-cat">Time Series</span></div>
@@ -2514,7 +2388,7 @@
       <!-- Project 8 -->
       <div class="proj-card fade-up" data-cat="thermal" onclick="openModal('p8')" style="transition-delay:0.05s">
         <div class="proj-media">
-          <img src="assets/images/p8_ev.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p8_ev.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">Thermal</span><span class="proj-cat">EV / Energy</span></div>
@@ -2552,7 +2426,7 @@
       <!-- Project 9 -->
       <div class="proj-card fade-up" data-cat="ai" onclick="openModal('p9')" style="transition-delay:0.1s">
         <div class="proj-media">
-          <img src="assets/images/p9_regression.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
+          <img src="p9_regression.png" alt="Project thumbnail" style="width:100%;height:100%;object-fit:cover;">
         </div>
         <div class="proj-body">
           <div class="proj-cats"><span class="proj-cat">Statistics</span><span class="proj-cat">Regression</span></div>
@@ -2643,6 +2517,7 @@
         <div class="skill-list">
           <span class="skill-item">MuJoCo</span>
           <span class="skill-item">CoppeliaSim (V-REP)</span>
+          <span class="skill-item">ROS</span>
           <span class="skill-item">PID / MPC</span>
           <span class="skill-item">ZMP / LIPM</span>
           <span class="skill-item">URDF / XML</span>
@@ -2846,7 +2721,7 @@
 
   <!-- ─── PUBLICATIONS ─── -->
   <section id="publications">
-    <div class="section-label">Research Dissemination</div>
+    <div class="section-label">Conferences</div>
     <h2 class="section-title">Conferences</h2>
     <p class="section-subtitle">Conference presentations and academic talks</p>
 
@@ -2950,7 +2825,7 @@
             <div
               style="font-size:11px; color:var(--text3); margin-bottom:2px; font-family:var(--mono); text-transform:uppercase; letter-spacing:0.08em;">
               Email</div>
-            <a href="mailto:f20220771@pilani.bits-pilani.ac.in">f20220771 [at] pilani [dot] bits-pilani [dot] ac [dot]
+            <a href="/cdn-cgi/l/email-protection#2b4d191b19191b1c1c1a6b5b42474a45420549425f58065b42474a4542054a48054245">f20220771 [at] pilani [dot] bits-pilani [dot] ac [dot]
               in</a>
           </div>
         </div>
@@ -3010,20 +2885,20 @@
         <div class="form-row">
           <div class="form-field">
             <label>Your Name</label>
-            <input type="text" name="name" placeholder="Iris Thorne" required>
+            <input type="text" placeholder="Jane Doe" required>
           </div>
           <div class="form-field">
             <label>Email</label>
-            <input type="email" name="email" placeholder="iris.thorne@visualcanvas.io" required>
+            <input type="email" placeholder="jane@example.com" required>
           </div>
         </div>
         <div class="form-field">
           <label>Subject</label>
-          <input type="text" name="subject" placeholder="Research collaboration / Internship opportunity..." required>
+          <input type="text" placeholder="Research collaboration / Internship opportunity...">
         </div>
         <div class="form-field">
           <label>Message</label>
-          <textarea name="message" placeholder="Your message here..." rows="5" required></textarea>
+          <textarea placeholder="Your message here..." rows="5"></textarea>
         </div>
         <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message →</button>
       </form>
@@ -3068,8 +2943,7 @@
             <span class="comment"># Link to GitHub: https://github.com/your-username/your-repo</span>
           </div>
           <div style="margin-top:12px;">
-            <a id="modalGithubBtn" href="#" class="btn btn-outline" style="font-size:10px; padding:7px 16px;"
-              target="_blank">🔗 Open GitHub Repository →</a>
+            <a id="modalGithubBtn" href="#" class="btn btn-outline" style="font-size:10px; padding:7px 16px;" target="_blank">🔗 Open GitHub Repository →</a>
           </div>
         </div>
       </div>
@@ -3077,7 +2951,7 @@
   </div>
 
   <!-- ─── JAVASCRIPT ─── -->
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // ─── NAV ───
     function toggleNav() {
       document.getElementById('navLinks').classList.toggle('open');
@@ -3102,9 +2976,10 @@
     // ─── PROJECT DATA ───
     const projects = {
       p1: {
-        image: 'assets/images/p1_threephase.png',
+        image: 'p1_threephase.png',
+        githubUrl: 'https://github.com/Thilak-Srinivasan/three-phase-flow-vof',
+        githubUrl: 'https://github.com/Thilak-Srinivasan/three-phase-flow-vof',
         title: 'Three-Phase Flow Simulation using VOF + AMR',
-        github: 'https://github.com/Thilak-Srinivasan/three-phase-flow-vof',
         code: `<span class="comment"># Three-phase flow simulation — ANSYS Fluent / Basilisk C</span>
 <span class="comment"># Replace with your actual code or link to GitHub</span>
 
@@ -3136,9 +3011,10 @@
       </div>`,
       },
       p2: {
-        image: 'assets/images/p2_solver.png',
+        image: 'p2_solver.png',
+        githubUrl: 'https://github.com/Thilak-Srinivasan/rarefied-gas-solver',
+        githubUrl: 'https://github.com/Thilak-Srinivasan/rarefied-gas-solver',
         title: '2D Compressible Navier–Stokes Solver (Rusanov FVM)',
-        github: 'https://github.com/Thilak-Srinivasan/rarefied-gas-solver',
         code: `<span class="comment">// 2D Compressible N-S Solver — Rusanov Finite Volume Method</span>
 <span class="comment">// C++ implementation — extend with your actual solver code</span>
 
@@ -3171,9 +3047,8 @@
       </div>`,
       },
       p3: {
-        image: 'assets/images/p3_livestock.png',
+        image: 'p3_livestock.png',
         title: 'Livestock Shelter Thermal Design — PCM + Arid Climate',
-        github: 'https://github.com/Thilak-Srinivasan/livestock-shelter-lca-lcca',
         code: `<span class="comment"># Thermal resistance network analysis</span>
 <span class="comment"># Three-layer design: reflective → PCM → hygroscopic interior</span>
 
@@ -3205,9 +3080,9 @@ layers = {
       </div>`,
       },
       p4: {
-        image: 'assets/images/p4_ai.png',
+        image: 'p4_ai.png',
+        githubUrl: 'https://github.com/Thilak-Srinivasan/ai-defence-supply-chain',
         title: 'AI-Based Predictive Maintenance & Spare Parts Forecasting',
-        github: 'https://github.com/Thilak-Srinivasan/ai-defence-supply-chain',
         code: `<span class="comment"># Random Forest model for defence supply chain risk</span>
 <span class="keyword">from</span> sklearn.ensemble <span class="keyword">import</span> RandomForestClassifier
 <span class="keyword">import</span> pandas <span class="keyword">as</span> pd
@@ -3240,9 +3115,8 @@ model = RandomForestClassifier(
       </div>`,
       },
       p5: {
-        image: 'assets/images/p5_piston.png',
+        image: 'p5_piston.png',
         title: 'Piston Assembly of a V6 Engine',
-        github: 'https://github.com/Thilak-Srinivasan/piston-assembly-v6',
         code: `<span class="comment">// Component → Machine → Key Operations</span>
 
 <span class="comment">// Piston Head → CNC Lathe + CNC Mill</span>
@@ -3281,9 +3155,8 @@ model = RandomForestClassifier(
       </div>`,
       },
       p6: {
-        image: 'assets/images/p6_capsule.png',
+        image: 'p6_capsule.png',
         title: 'AI-Assisted Capsule Endoscopy — Multiphysics FSI Simulation',
-        github: 'https://github.com/Thilak-Srinivasan/capsule-endoscopy',
         code: `<span class="comment">% COMSOL Multiphysics — Coupled EM + CFD + Structural</span>
 <span class="comment">% Physics modules: Magnetic Fields (mf) + Laminar Flow (spf) + Solid Mechanics (solid)</span>
 
@@ -3313,7 +3186,7 @@ P_tissue_max = <span class="string">3500</span>;    <span class="comment">% Pa (
       </div>`,
       },
       p7: {
-        image: 'assets/images/p7_tcs.png',
+        image: 'p7_tcs.png',
         title: 'Financial Time Series Analysis — TCS Stock (ARIMA/SARIMA)',
         github: 'https://github.com/Thilak-Srinivasan/tcs-financial-time-series',
         code: `<span class="keyword">import</span> pandas <span class="keyword">as</span> pd
@@ -3345,7 +3218,7 @@ var_95 = result.predict().quantile(<span class="string">0.05</span>)`,
       </div>`,
       },
       p8: {
-        image: 'assets/images/p8_ev.png',
+        image: 'p8_ev.png',
         title: 'EV Battery Thermal Management — Tesla Model Y NMC811',
         code: `<span class="comment">% EV Battery Pack Thermal Simulation</span>
 <span class="comment">% Tesla Model Y: 4,416 NMC811 cells (21700 format)</span>
@@ -3377,7 +3250,7 @@ Q_charge   = <span class="string">12500</span>;  <span class="comment">% W — f
       </div>`,
       },
       p9: {
-        image: 'assets/images/p9_regression.png',
+        image: 'p9_regression.png',
         title: 'Non-Linear Regression for Solar Irradiation Modeling',
         code: `<span class="keyword">import</span> numpy <span class="keyword">as</span> np
 <span class="keyword">from</span> scipy.optimize <span class="keyword">import</span> least_squares
@@ -3422,20 +3295,23 @@ Q_charge   = <span class="string">12500</span>;  <span class="comment">% W — f
       document.getElementById('modalTitle').textContent = p.title;
       document.getElementById('modalContent').innerHTML = p.content;
       document.getElementById('modalCode').innerHTML = p.code;
+      // Set GitHub repo button dynamically
+      const ghBtn = document.getElementById('modalGithubBtn');
+      if (ghBtn) {
+        if (p.githubUrl) {
+          ghBtn.href = p.githubUrl;
+          ghBtn.style.display = 'inline-flex';
+        } else {
+          ghBtn.href = '#';
+          ghBtn.style.display = 'none';
+        }
+      }
       // Load image into modal media
       const mediaEl = document.getElementById('modalMedia');
       if (p.image) {
         mediaEl.innerHTML = `<img src="${p.image}" alt="${p.title}" style="width:100%;border-radius:8px;">`;
       } else {
         mediaEl.innerHTML = `<div class="modal-media-placeholder-text">📸 <span>Add project images, videos, or simulation outputs here</span><br><small style="color:var(--text3)">Upload directly from your GitHub repository or local files</small></div>`;
-      }
-      // Set GitHub button
-      const ghBtn = document.getElementById('modalGithubBtn');
-      if (p.github) {
-        ghBtn.href = p.github;
-        ghBtn.style.display = '';
-      } else {
-        ghBtn.style.display = 'none';
       }
       document.getElementById('modalOverlay').classList.add('open');
       document.body.style.overflow = 'hidden';
@@ -3496,52 +3372,20 @@ Q_charge   = <span class="string">12500</span>;  <span class="comment">% W — f
     }
 
     // ─── CONTACT FORM ───
-   async function handleSubmit(e) {
-  e.preventDefault();
-  const form = e.target;
-  const btn  = form.querySelector('button[type=submit]');
-  const name    = (form.querySelector('[name=name]')?.value    || '').trim();
-  const email   = (form.querySelector('[name=email]')?.value   || '').trim();
-  const subject = (form.querySelector('[name=subject]')?.value || '').trim();
-  const message = (form.querySelector('[name=message]')?.value || '').trim();
-
-  btn.disabled = true;
-  btn.textContent = 'Sending...';
-
-  try {
-    const res = await fetch('https://formsubmit.co/ajax/f20220771@pilani.bits-pilani.ac.in', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-      body: JSON.stringify({
-        name, email, subject, message,
-        _subject: `Portfolio Contact: ${subject}`,
-        _template: 'table',
-        _captcha: 'false'
-      })
-    });
-    if (!res.ok) throw new Error('failed');
-    btn.textContent = '✓ Message Sent!';
-    btn.style.background = '#22c55e';
-    form.reset();
-    setTimeout(() => {
-      btn.textContent = 'Send Message →';
-      btn.style.background = '';
-      btn.disabled = false;
-    }, 3000);
-  } catch (err) {
-    btn.textContent = 'Send Message →';
-    btn.disabled = false;
-    const s = encodeURIComponent(subject || 'Portfolio contact');
-    const b = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-    window.location.href = `mailto:f20220771@pilani.bits-pilani.ac.in?subject=${s}&body=${b}`;
-  }
-}
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type=submit]');
+      btn.textContent = '✓ Message Sent!';
+      btn.style.background = '#22c55e';
+      setTimeout(() => { btn.textContent = 'Send Message →'; btn.style.background = ''; }, 3000);
+    }
 
     // ─── FADE IN ON SCROLL ───
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
     }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
+    document
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
     // ─── KEYBOARD ───
@@ -3550,3 +3394,17 @@ Q_charge   = <span class="string">12500</span>;  <span class="comment">% W — f
 </body>
 
 </html>
+
+<form action="https://formsubmit.co/f20220771@pilani.bits-pilani.ac.in" method="POST" class="contact-form">
+    <input type="hidden" name="_captcha" value="false">
+    <div class="form-group">
+        <input type="text" name="name" placeholder="Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="email" placeholder="Email" required>
+    </div>
+    <div class="form-group">
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Send Message</button>
+</form>
