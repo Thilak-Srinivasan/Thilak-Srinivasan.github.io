@@ -1850,10 +1850,12 @@
                   rel="noopener noreferrer"
               title="Associate Professor, Department of Mathematics, BITS Pilani">Prof. Anirudh Singh Rana</a></span>, Associate Professor</div>
             <ul>
-              <li>Developing and validating numerical solvers for Navier–Stokes regimes starting from an existing Euler
-                solver; implementing viscous terms, boundary conditions, and solver stabilization.</li>
-              <li>Reviewed oblique shock-wave interactions and non-continuum effects; derived test cases and produced
-                solver outputs — shock profiles, convergence studies.</li>
+              <li>Developed a custom structured FVM solver to simulate 2D unsteady compressible NSF equations. The project successfully models 
+                supersonic oblique shock flow over a 15° wedge at Mach 2.5. Key technical implementations include the Rusanov (Local Lax-Friedrichs) scheme
+                for inviscid fluxes, second-order central differencing for viscous terms, and temperature-dependent viscosity via Sutherland's law.</li>
+              <li>To optimize performance, a two-level shock-adapted AMR strategy was integrated, capturing the thin shock 
+                region dynamically at 2x resolution. The completed solver was validated against NACA 1135 oblique shock theory, yielding a 
+                sub-1% error across all primary shock properties while tracking viscous displacement effects absent from pure inviscid theory.</li>
             </ul>
             <div class="tl-tags">
               <span class="tag">Navier–Stokes</span>
