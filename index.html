@@ -1835,7 +1835,7 @@
                   d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
               </svg></div>
             <div class="tl-meta">
-              <div class="tl-role">Numerical Simulation of Rarefied Gases</div>
+              <div class="tl-role">Numerical Simulation of Oblique Shock Waves with Shock-Adapted AMR</div>
                 <div class="tl-org">BITS Pilani · <a href="https://www.bits-pilani.ac.in/pilani/mechanical-engineering/"
                   target="_blank" rel="noopener noreferrer">Department of Mathematics</a></div>
               <div class="tl-period">
@@ -1850,19 +1850,17 @@
                   rel="noopener noreferrer"
               title="Associate Professor, Department of Mathematics, BITS Pilani">Prof. Anirudh Singh Rana</a></span>, Associate Professor</div>
             <ul>
-              <li>Developed a custom structured FVM solver to simulate 2D unsteady compressible NSF equations. The project successfully models 
-                supersonic oblique shock flow over a 15° wedge at Mach 2.5. Key technical implementations include the Rusanov (Local Lax-Friedrichs) scheme
-                for inviscid fluxes, second-order central differencing for viscous terms, and temperature-dependent viscosity via Sutherland's law.</li>
-              <li>To optimize performance, a two-level shock-adapted AMR strategy was integrated, capturing the thin shock 
-                region dynamically at 2x resolution. The completed solver was validated against NACA 1135 oblique shock theory, yielding a 
-                sub-1% error across all primary shock properties while tracking viscous displacement effects absent from pure inviscid theory.</li>
+              <li>Developed a structured FVM solver for Mach 2.5 compressible flows over a 15° wedge, integrating the Rusanov scheme,
+                central differencing, and Sutherland’s viscosity law.</li>
+              <li>Implemented a two-level AMR strategy (2x local resolution) to capture sharp shock gradients, validating within 1% error
+                against NACA 1135 theory while tracking viscous displacement effects.</li>
             </ul>
             <div class="tl-tags">
+              <span class="tag">MATLAB</span>
+              <span class="tag">Finite Volume Method (FVM)</span>
+              <span class="tag">Adaptive Mesh Refinement (AMR)</span>
               <span class="tag">Navier–Stokes</span>
-              <span class="tag">Euler Solver</span>
               <span class="tag">Rarefied Gas Dynamics</span>
-              <span class="tag">Shock Waves</span>
-              <span class="tag">C/C++</span>
             </div>
           </div>
         </div>
